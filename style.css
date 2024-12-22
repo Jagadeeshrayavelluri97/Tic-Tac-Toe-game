@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#gameContainer {
+    text-align: center;
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 75px);
+    gap: 5px;
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #000;
+    font-size: 50px;
+    text-align: center;
+    line-height: 75px; /* Center text vertically */
+    cursor: pointer;
+}
+
+.cell:hover {
+   background-color: #e0e0e0; /* Change color on hover */
+}
+
+#statusText {
+   font-size: 1.5em; /* Increased font size for better visibility */
+   margin: 20px 0; 
+}
+
+#restartBtn {
+   padding: 10px 20px; 
+   font-size: 1em; 
+   cursor: pointer; 
+   border: none; 
+   background-color: #007BFF; 
+   color: white; 
+   border-radius: 5px; 
+   transition: background-color 0.2s ease; 
+}
+
+#restartBtn:hover {
+   background-color: #0056b3; /* Darker blue on hover */
+}
